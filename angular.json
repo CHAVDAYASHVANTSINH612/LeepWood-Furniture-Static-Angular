@@ -32,10 +32,20 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -96,15 +106,64 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
             ],
             "scripts": []
           }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "ShreejiFurniture_Frontend_Angular:ionic-cordova-build",
+            "devServerTarget": "ShreejiFurniture_Frontend_Angular:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "ShreejiFurniture_Frontend_Angular:ionic-cordova-build:production",
+              "devServerTarget": "ShreejiFurniture_Frontend_Angular:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "ShreejiFurniture_Frontend_Angular:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ShreejiFurniture_Frontend_Angular:build:production"
+            }
+          }
         }
       }
+    }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@ionic/angular-toolkit",
+      "@ionic/angular-toolkit"
+    ]
+  },
+  "schematics": {
+    "@ionic/angular-toolkit:component": {
+      "styleext": "scss"
+    },
+    "@ionic/angular-toolkit:page": {
+      "styleext": "scss"
     }
   }
 }
