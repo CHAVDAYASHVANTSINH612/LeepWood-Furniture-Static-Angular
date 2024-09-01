@@ -148,6 +148,9 @@
               "browserTarget": "ShreejiFurniture_Frontend_Angular:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
