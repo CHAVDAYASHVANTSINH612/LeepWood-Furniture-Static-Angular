@@ -8,7 +8,14 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">ContactUs</a></li>
         <li><a href="#about">AboutUs</a></li>
-        <li><a href="#wht.me" class="btn">Get Started</a></li>
+        <li><a href="https://maps.app.goo.gl/REYegu4jEJEBAE7K9" target="_blank" id="locMenu">
+                <span id="locsvg">
+                    <fa-icon [icon]="faLocationDot" class="locIcon"></fa-icon>
+                </span>
+                <span id="loctext">
+                    Sector 11, Gandhinagar
+                </span>
+            </a></li>
     </ul>
-    <fa-icon [icon]="menuIcon" class="icon" (click)="toggleFunc()"></fa-icon>
+    <fa-icon [icon]="menuIcon" class="menuIcon" (click)="toggleFunc()"></fa-icon>
 </div>

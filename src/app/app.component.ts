@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,5 +7,5 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'ShreejiFurniture_Frontend_Angular';
+  title = 'Furniture_Frontend_Angular';
 }

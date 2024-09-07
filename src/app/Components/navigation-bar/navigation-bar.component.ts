@@ -1,10 +1,15 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Input,
+  ViewChild,
+} from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   faBars,
-  faBarsProgress,
-  faCoffee,
   faXmark,
+  faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -19,6 +24,7 @@ export class NavigationBarComponent {
   faBars = faBars;
   faXmark = faXmark;
   menuIcon = faBars;
+  faLocationDot = faLocationDot;
 
   toggleFunc(): void {
     console.log('hello');
