@@ -35,6 +35,7 @@ ul li a {
     margin: auto;
     margin-left: 12px;
     font-size: 18px;
+    white-space: nowrap;
 }
 
 ul li a:hover,
