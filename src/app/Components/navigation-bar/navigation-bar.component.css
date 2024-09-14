@@ -83,7 +83,6 @@ ul li .act {
     height: 30px;
     color: black;
     margin-right: 3px;
-
 }
 
 #locMenu:hover {
@@ -122,6 +121,7 @@ ul li .act {
         padding: 0px;
         gap: 22px;
         height: 300px;
+        margin: 0px;
     }
 
     .menuIcon {
@@ -136,5 +136,11 @@ ul li .act {
 
     .locMenu {
         margin-top: 0px
+    }
+
+    .locli {
+        height: 30px;
+        margin: 0px;
+        margin-top: -25px;
     }
 }
