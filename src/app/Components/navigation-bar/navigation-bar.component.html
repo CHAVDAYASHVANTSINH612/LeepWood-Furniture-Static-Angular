@@ -3,12 +3,12 @@
         <a href="#">LeepWood Furniture</a>
     </div>
     <ul class="links" #ulElement>
-        <li><a href="#home" class="act">Home</a></li>
-        <li><a href="#Products">Products</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">ContactUs</a></li>
+        <li><a href="#home" class="act" (click)="toggleFunc()">Home</a></li>
+        <li><a href="#Products" (click)="toggleFunc()">Products</a></li>
+        <li><a href="#services" (click)="toggleFunc()">Services</a></li>
+        <li><a href="#contact" (click)="toggleFunc()">ContactUs</a></li>
         <!-- <li><a href="#about">AboutUs</a></li> -->
-        <li class="locli"><a href="https://maps.app.goo.gl/REYegu4jEJEBAE7K9" target="_blank">
+        <li class="locli"><a href="https://maps.app.goo.gl/REYegu4jEJEBAE7K9" target="_blank" (click)="toggleFunc()">
                 <div class="locMenuli">
                     <div id="locMenu">
                         <span id="locsvg">

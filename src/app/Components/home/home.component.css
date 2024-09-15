@@ -6,6 +6,9 @@
 
 .home-content {
     background-color: #abe2f8;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom: 1px solid gray;
 }
 
 .heading-text {
