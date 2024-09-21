@@ -1,0 +1,14 @@
+.card:hover {
+    // border: 1px solid black;
+    transform: scale(1.02);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .card{
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    transition: all 0.5s;
+  }
