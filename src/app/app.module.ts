@@ -7,6 +7,7 @@ import { NavigationBarComponent } from './Components/navigation-bar/navigation-b
 import { HomeComponent } from './Components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductsComponent } from './Components/products/products.component';
+import { ServicesComponent } from './Components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProductsComponent } from './Components/products/products.component';
     NavigationBarComponent,
     HomeComponent,
     ProductsComponent,
+    ServicesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
