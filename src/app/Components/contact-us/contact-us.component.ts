@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact-us',
@@ -9,5 +9,6 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 export class ContactUsComponent implements OnInit {
   constructor() {}
   faLocationDot = faLocationDot;
+  faPhone = faPhone;
   ngOnInit() {}
 }
