@@ -64,7 +64,6 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/"
             },
             "development": {
               "optimization": false,
