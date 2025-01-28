@@ -1,0 +1,196 @@
+// /* From Uiverse.io by Creatlydev */ 
+// .card {
+//     margin: auto;
+//     width: min(300px, 100%);
+//     background-color: #fefefe;
+//     border-radius: 1rem;
+//     padding: 0.5rem;
+//     color: #141417;
+//   }
+//   .card__hero {
+//     background-color: #fefefe;
+//     border-radius: 0.5rem 0.5rem 0 0;
+//     // padding: 1.5rem;
+//     font-size: 0.875rem;
+//   }
+//   .card__hero .card__job-title {
+//     margin: 2rem 0;
+//     font-size: 2rem;
+//     font-weight: 600;
+//     padding-right: 2rem;
+//   }
+//   .card__hero-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     gap: 1rem;
+//     font-weight: 700;
+//   }
+//   .card__footer {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: start;
+//     flex-direction: column;
+//     flex-wrap: nowrap;
+//     padding: 0.75rem;
+//     row-gap: 1rem;
+//     font-weight: 700;
+//     font-size: 0.875rem;
+//   }
+//   @media (min-width: 340px) {
+//     .card__footer {
+//       flex-direction: row;
+//       align-items: center;
+//       justify-content: space-between;
+//       gap: 1rem;
+//     }
+//   }
+//   .card__job-summary {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     gap: 0.75rem;
+//   }
+//   .card__btn {
+//     width: 100%;
+//     font-weight: 400;
+//     border: none;
+//     display: block;
+//     cursor: pointer;
+//     text-align: center;
+//     padding: 0.5rem 1.25rem;
+//     border-radius: 1rem;
+//     background-color: #141417;
+//     color: #fff;
+//     font-size: 1rem;
+//   }
+//   @media (min-width: 340px) {
+//     .card__btn {
+//       width: max-content;
+//     }
+//   }
+
+//   .product-card{
+//     box-shadow: 10px 10px 20px rgba(0,0,0,.05)
+//   }
+  
+
+
+
+// 2 
+
+
+
+.card:hover {
+  // border: 1px solid black;
+  transform: scale(1.02);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card{
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  transition: all 0.5s;
+}
+
+.whatsapp_msg_link{
+  margin:auto;
+}
+
+a .button {
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+  background-color: #fff;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
+
+.button-decor {
+  position: absolute;
+  inset: 0;
+  background-color: var(--clr);
+  transform: translateX(-100%);
+  transition: transform .5s;
+  z-index: 0;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.button__icon {
+  width: 48px;
+  height: 40px;
+  background-color: var(--clr);
+  display: grid;
+  place-items: center;
+}
+
+.button__text {
+  display: inline-block;
+  transition: color .2s;
+  padding: 2px 1.5rem 2px;
+  padding-left: .75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.button:hover .button__text{
+  color: #fff;
+}
+
+.button:hover .button-decor{
+  transform: translate(0);
+}
+.card__btn {
+  width: 60%;
+  font-weight: 600;
+  border: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  background-color: rgb(23, 14, 84);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.25s ease-out;
+}
+
+.card__btn:hover {
+  transform: translateY(-3px);
+}
+
+
+// 3
+
+// .hide-scrollbar {
+//   -ms-overflow-style: none;  /* IE and Edge */
+//   scrollbar-width: none;     /* Firefox */
+// }
+
+// .hide-scrollbar::-webkit-scrollbar {
+//   display: none;            /* Chrome, Safari and Opera */
+// }
+

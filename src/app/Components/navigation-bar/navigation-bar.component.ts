@@ -27,7 +27,7 @@ export class NavigationBarComponent {
   faLocationDot = faLocationDot;
 
   toggleFunc(): void {
-    console.log('hello');
+    // console.log('hello');
     this.isMenuOpen = !this.isMenuOpen;
 
     if (this.isMenuOpen) {

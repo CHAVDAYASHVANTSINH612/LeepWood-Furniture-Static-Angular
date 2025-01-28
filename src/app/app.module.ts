@@ -10,6 +10,7 @@ import { ProductsComponent } from './Components/products/products.component';
 import { ServicesComponent } from './Components/services/services.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { ThreeDComponent } from './Components/three-d/three-d.component';
+import { ProductSofaComponent } from './Components/product-sofa/product-sofa.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ThreeDComponent } from './Components/three-d/three-d.component';
     ProductsComponent,
     ServicesComponent,
     ContactUsComponent,
-    ThreeDComponent
+    ThreeDComponent,
+    ProductSofaComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
