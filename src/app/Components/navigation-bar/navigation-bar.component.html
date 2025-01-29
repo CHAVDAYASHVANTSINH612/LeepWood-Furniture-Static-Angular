@@ -2,13 +2,13 @@
     <div class="logo">
         <a href="#">LeepWood Furniture</a>
     </div>
-    <ul class="links" #ulElement>
-        <li><a href="#home" class="act" (click)="toggleFunc()">Home</a></li>
+    <ul class="links mr-4" #ulElement>
+        <li><a href="#home" (click)="toggleFunc()">Home</a></li>
         <li><a href="#Products" (click)="toggleFunc()">Products</a></li>
         <li><a href="#services" (click)="toggleFunc()">Services</a></li>
         <li><a href="#contact" (click)="toggleFunc()">ContactUs</a></li>
         <!-- <li><a href="#about">AboutUs</a></li> -->
-        <li class="locli"><a href="https://maps.app.goo.gl/REYegu4jEJEBAE7K9" target="_blank" (click)="toggleFunc()">
+        <!-- <li class="locli"><a href="https://maps.app.goo.gl/REYegu4jEJEBAE7K9" target="_blank" (click)="toggleFunc()">
                 <div class="loc_link">
                     <button class="button" style="--clr: #000000;">
                         <span class="button-decor"></span>
@@ -22,18 +22,8 @@
                         </div>
                     </button>
                 </div>
-                <!-- <div class="locMenuli">
-                    <div id="locMenu">
-                        <span id="locsvg">
-                            <fa-icon [icon]="faLocationDot" class="locIcon"></fa-icon>
-                        </span>
-                        <span id="loctext">
-                            Sector 11, Gandhinagar
-                        </span>
-                    </div>
-                </div> -->
             </a>
-        </li>
+        </li> -->
     </ul>
     <fa-icon [icon]="menuIcon" class="menuIcon" (click)="toggleFunc()"></fa-icon>
 </div>
