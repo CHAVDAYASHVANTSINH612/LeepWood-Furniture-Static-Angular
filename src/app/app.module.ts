@@ -11,6 +11,7 @@ import { ServicesComponent } from './Components/services/services.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { ThreeDComponent } from './Components/three-d/three-d.component';
 import { ProductSofaComponent } from './Components/product-sofa/product-sofa.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductSofaComponent } from './Components/product-sofa/product-sofa.com
     ServicesComponent,
     ContactUsComponent,
     ThreeDComponent,
-    ProductSofaComponent
+    ProductSofaComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
