@@ -23,6 +23,7 @@ export class ProductDetailComponent  implements OnInit {
     this.product =  this.productService.getProductBySKU(this.sku);
     this.totalImages = this.product.ImageUrls.length;
     console.log(this.product);
+    window.scrollTo(0, 0);
   }
   
 
