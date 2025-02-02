@@ -13,7 +13,7 @@ export class ProductServiceService {
   }
 
   getProductsByCategory(category:string):Product[]{
-    return this.products.filter(product => product.Category === category);
+    return this.products.filter(product => product.Category.toLowerCase() === category.toLowerCase());
   }
 
   getAllProducts():Product[]{

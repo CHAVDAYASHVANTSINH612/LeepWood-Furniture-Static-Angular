@@ -18,7 +18,8 @@ export class ProductSofaComponent  implements OnInit {
 
   ngOnInit() {
     this.Jhulas = this.productService.getProductsByCategory("Jhulas");
-    this.CofeeTables = this.productService.getProductsByCategory("Cofee Tables");
+    this.CofeeTables = this.productService.getProductsByCategory("Coffee Tables");
+    console.log(this.CofeeTables);
   }
 
 
