@@ -5,9 +5,7 @@
   <!-- Main container with horizontal scroll -->
   <div class="relative w-full">
 
-
-    <!-- Category1  Row 1   -->
-    <!-- Scrollable container -->
+    <!-- Category1 Jhulas Row 1   -->
     <div class="flex-col">
       <h1 class="font-sans pl-[8vw] pt-4 text-left from-neutral-950 text-3xl">Jhulas</h1>
 
@@ -33,7 +31,7 @@
                 {{product.SmallDescription}}
               </p>
             </div>
-            <button class="card__btn mx-auto" >View Details</button>
+           <a [routerLink]="['/product-detail', product.SKU]"> <button class="card__btn mx-auto" >View Details</button> </a>
           </div>
 
           <div *ngFor="let product of Jhulas.slice(4, 8)"
@@ -59,14 +57,10 @@
 
 
     <!-- Category1  Row 2   -->
-    <!-- Scrollable container -->
     <div id="category1row2" class="flex-col">
-      <!-- <h1 class="font-sans pl-[8vw] pt-4 text-left from-neutral-950 text-3xl -mb-6">Beds</h1> -->
       <div
         class="flex overflow-x-auto gap-4 snap-x snap-mandatory hide-scrollbar lg:justify-center pl-2 pt-2 pb-6 mb-3">
         <!-- Individual cards - now all in a single row -->
-
-        <!-- Card 1 -->
         <div *ngFor="let product of Jhulas.slice(4, 8)"
           class="card flex-shrink-0 snap-center relative pb-4 flex flex-col text-gray-700 bg-white shadow-sm bg-clip-border rounded-xl w-[80vw] md:w-[40vw] lg:w-[250px] 2xl:w-[300px]">
           <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-[auto]">
@@ -77,10 +71,6 @@
               <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
                 {{product.Title}}
               </p>
-              <!-- <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                <small>Starting From</small> ₹12,000
-
-              </p> -->
             </div>
             <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
               {{product.SmallDescription}}
@@ -93,12 +83,10 @@
 
 
     <!-- Category2 CofeeTables  Row 1   -->
-    <!-- Scrollable container -->
     <div class="flex-col">
       <h1 class="font-sans pl-[8vw] pt-4 text-left from-neutral-950 text-3xl -mb-6">Cofee Tables</h1>
       <div
         class="flex overflow-x-auto gap-4 snap-x snap-mandatory hide-scrollbar lg:justify-center pl-2 pt-8 pb-6 mb-3">
-        <!-- Individual cards - now all in a single row -->
 
         <!-- Card 1 -->
         <div *ngFor="let product of CofeeTables.slice(0, 4)"
@@ -123,7 +111,7 @@
           </div>
           <button class="card__btn mx-auto">View Details</button>
         </div>
-        
+
       </div>
     </div>
 
