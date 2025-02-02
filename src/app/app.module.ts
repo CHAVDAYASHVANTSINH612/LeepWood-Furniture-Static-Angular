@@ -6,6 +6,7 @@ import { NavigationBarComponent } from './Components/navigation-bar/navigation-b
 import { HomeComponent } from './Components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductsComponent } from './Components/products/products.component';
+import { ServicesComponent } from './Components/services/services.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { ThreeDComponent } from './Components/three-d/three-d.component';
 import { ProductSofaComponent } from './Components/product-sofa/product-sofa.component';
@@ -19,6 +20,7 @@ import { ProductDetailComponent } from './Components/product-detail/product-deta
     NavigationBarComponent,
     HomeComponent,
     ProductsComponent,
+    ServicesComponent,
     ContactUsComponent,
     ThreeDComponent,
     ProductSofaComponent,
