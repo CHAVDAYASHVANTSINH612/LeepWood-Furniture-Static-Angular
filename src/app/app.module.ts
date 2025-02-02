@@ -23,7 +23,7 @@ import { FooterComponent } from './Components/footer/footer.component';
     ContactUsComponent,
     ThreeDComponent,
     ProductSofaComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
