@@ -1,12 +1,23 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../Models/Product';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductServiceService {
 
-  constructor() { }
+  formspreeUrl = "https://formspree.io/f/xovjwkww";
+  
+  constructor(private http:HttpClient) { }
+
+  submitForm(formData: any): Observable<any> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+    return this.http.post(this.formspreeUrl, formData, { headers });
+  }
 
   getProductBySKU(sku:string):Product{
     return this.products.find(product => product.SKU === sku)!;
@@ -159,7 +170,7 @@ export class ProductServiceService {
       SmallDescription: "Add a traditional touch with our stylish Jhulas, perfect for both indoor and outdoor relaxation.",
       LongDescription: "In Development .. stay tuned",
       Price: 9000,
-      ImageUrls: ["assets/products1_jhula.webp"],
+      ImageUrls: ["assets/jhula8.webp"],
       Category: "Jhulas", 
       InStock: true,
       Rating: 4.0,
@@ -171,8 +182,10 @@ export class ProductServiceService {
       Material: "Metal Frame with Cushions",
       Color: "Blue/Black",
       Weight: 35,
-      SKU: "JH-004"
+      SKU: "JH-008"
     },
+
+
     {
       Title: "Marble Duo Nesting Coffee Tables",
       SmallDescription: "Elegant marble-topped nesting tables with black metal frames bring style to any room.",
@@ -209,7 +222,7 @@ export class ProductServiceService {
       Material: "Marble, Gold-finished Metal",
       Color: "White/Gold",
       Weight: 35,
-      SKU: "CT-002"
+      SKU: "CT-004"
     },
     {
       Title: "Modern Nesting Coffee Tables",
@@ -228,14 +241,14 @@ export class ProductServiceService {
       Material: "Marble, Metal Frame",
       Color: "White/Black",
       Weight: 35,
-      SKU: "CT-003"
+      SKU: "CT-002"
     },
     {
       Title: "Contemporary Marble Effect Side Tables",
       SmallDescription: "Modern side tables featuring pristine white marble-effect tops with black metal framing.",
       LongDescription: "In Development .. stay tuned",
       Price: 12000,
-      ImageUrls: ["assets/CofeeTable2.jpeg"],
+      ImageUrls: ["assets/CofeeTable3.jpeg"],
       Category: "Coffee Tables", 
       InStock: true,
       Rating: 4.0,
@@ -247,7 +260,7 @@ export class ProductServiceService {
       Material: "Marble, Metal Frame",
       Color: "White/Black",
       Weight: 35,
-      SKU: "CT-004"
+      SKU: "CT-003"
     }
 
   ]

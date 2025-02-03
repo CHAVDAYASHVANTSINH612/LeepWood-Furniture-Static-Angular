@@ -13,6 +13,8 @@ import { ProductSofaComponent } from './Components/product-sofa/product-sofa.com
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeLandingPageComponent } from './Components/home-landing-page/home-landing-page.component';
 import { ProductDetailComponent } from './Components/product-detail/product-detail.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { ProductDetailComponent } from './Components/product-detail/product-deta
     HomeLandingPageComponent,
     ProductDetailComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,ReactiveFormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
