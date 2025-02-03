@@ -66,7 +66,7 @@
                 [ngClass]="{'border-gray-300': !orderForm.get('phoneNumber')?.touched || orderForm.get('phoneNumber')?.valid, 'border-red-500': orderForm.get('phoneNumber')?.touched && orderForm.get('phoneNumber')?.invalid}" />
             </div>
             <div class='flex items-center gap-6 mt-4'>
-              <input type='text' placeholder='Address(required)' formControlName="address"
+              <input type='text' placeholder='Full Address (required)' formControlName="address"
                 class='bg-white px-4 py-2.5 text-sm w-[70%] border border-gray-300 outline-0 rounded' [ngClass]="{'border-gray-300': !orderForm.get('phoneNumber')?.touched || orderForm.get('address')?.valid, 'border-red-500': orderForm.get('address')?.touched && orderForm.get('address')?.invalid}" />
             </div>
             <input type="hidden" value="Prod_name={{product.Title}}&&SKU={{product.SKU}}" formControlName="product" >

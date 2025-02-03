@@ -53,9 +53,9 @@ export class ProductDetailComponent  implements OnInit {
     let name= this.orderForm.get('name');
     let phoneNumber= this.orderForm.get('phoneNumber');
     let address= this.orderForm.get('address');
-    let product= this.orderForm.get('product')?.value;
+    let product_val="SKU="+this.product.SKU +" ProductName="+this.product.Title ;
     
-    let form_name = "Name="+name?.value+"&&phonenumber="+phoneNumber?.value+"&&address="+address?.value+"&&product="+product;
+    let form_name = "Name="+name?.value+"&&phonenumber="+phoneNumber?.value+"&&address="+address?.value+"&&product="+product_val;
 
     if(!name?.valid){
       this.statusMessage="Name Required"
@@ -72,7 +72,7 @@ export class ProductDetailComponent  implements OnInit {
 
    let model_form = {
       name : form_name ,
-      email: product
+      // email: product_val
      };
 
      this.productService.submitForm(model_form).subscribe(
