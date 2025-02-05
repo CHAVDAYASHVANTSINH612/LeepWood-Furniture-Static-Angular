@@ -9,6 +9,8 @@ import { Observable } from 'rxjs';
 export class ProductServiceService {
 
   formspreeUrl = "https://formspree.io/f/xovjwkww";
+
+  ContactUsformspreeUrl = "https://formspree.io/f/movqqgak";
   
   constructor(private http:HttpClient) { }
 
@@ -17,6 +19,13 @@ export class ProductServiceService {
       'Content-Type': 'application/json',
     });
     return this.http.post(this.formspreeUrl, formData, { headers });
+  }
+
+  submitContactUsForm(formData: any): Observable<any> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+    return this.http.post(this.ContactUsformspreeUrl, formData, { headers });
   }
 
   getProductBySKU(sku:string):Product{
