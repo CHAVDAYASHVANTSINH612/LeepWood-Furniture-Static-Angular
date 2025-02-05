@@ -14,7 +14,8 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HomeLandingPageComponent } from './Components/home-landing-page/home-landing-page.component';
 import { ProductDetailComponent } from './Components/product-detail/product-detail.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http'; 
+import { SliderBannerComponent } from './Components/slider-banner/slider-banner.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +30,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeLandingPageComponent,
     ProductDetailComponent,
+    SliderBannerComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,ReactiveFormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}
