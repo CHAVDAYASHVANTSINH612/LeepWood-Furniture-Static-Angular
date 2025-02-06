@@ -14,11 +14,13 @@ export class ProductSofaComponent  implements OnInit {
 
   Jhulas:Product[] = [];
   CofeeTables :Product[] = [];
+  Sofas:Product[]=[];
 
   ngOnInit() {
     this.Jhulas = this.productService.getProductsByCategory("Jhulas");
     this.CofeeTables = this.productService.getProductsByCategory("Coffee Tables");
-    console.log(this.CofeeTables);
+    this.Sofas = this.productService.getProductsByCategory("Sofa");
+    console.log(this.Sofas);
   }
 
 

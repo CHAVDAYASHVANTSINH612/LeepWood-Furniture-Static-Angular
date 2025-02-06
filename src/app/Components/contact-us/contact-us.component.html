@@ -5,7 +5,7 @@
     <form [formGroup]="contactUsForm" class="" action="">
       <div class="mt-6">
           <p class="text-red-700 text-center font-bold">{{statusMessage}}</p>
-        <div class='flex-col items-center gap-6 mt-4'>
+        <div class='flex-col items-center gap-6 mt-4 px-8'>
           <input type='text' placeholder='Name(Required)' formControlName="name"
             class='bg-white px-4 py-2.5 text-sm w-[100%] border outline-0 rounded'
             [ngClass]="{'border-gray-300': !contactUsForm.get('name')?.touched || contactUsForm.get('name')?.valid, 'border-red-500': contactUsForm.get('name')?.touched && contactUsForm.get('name')?.invalid}" />
@@ -13,7 +13,7 @@
             class='bg-white mt-6 px-4 py-2.5 text-sm w-[100%] border outline-0 rounded'
             [ngClass]="{'border-gray-300': !contactUsForm.get('phoneNumber')?.touched || contactUsForm.get('phoneNumber')?.valid, 'border-red-500': contactUsForm.get('phoneNumber')?.touched && contactUsForm.get('phoneNumber')?.invalid}" />
         </div>
-        <div class='flex items-center gap-6 mt-4'>
+        <div class='flex items-center gap-6 mt-4 px-8'>
           <input type='text' placeholder='Message or Requirements (Optional)' formControlName="message"
             class='bg-white px-4 py-2.5 text-sm w-[100%] border border-gray-300 outline-0 rounded'/>
         </div>

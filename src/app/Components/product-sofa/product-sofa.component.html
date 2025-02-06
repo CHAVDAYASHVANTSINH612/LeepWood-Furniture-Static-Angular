@@ -5,6 +5,57 @@
   <!-- Main container with horizontal scroll -->
   <div class="relative w-full">
 
+      <!-- Category1 Jhulas Row 1   -->
+      <div class="flex-col">
+        <h1 class="font-sans pl-[8vw] pt-4 text-left from-neutral-950 text-3xl">Sofas</h1>
+  
+          <div class="flex overflow-x-auto gap-4 snap-x snap-mandatory hide-scrollbar lg:justify-center pl-2 pt-2 pb-6 mb-3">
+           <!-- Individual cards - now all in a single row -->
+  
+  
+            <div *ngFor="let product of Sofas.slice(0, 4)"
+              class="card flex-shrink-0 snap-center relative pb-4 flex flex-col text-gray-700 bg-white shadow-sm bg-clip-border rounded-xl w-[80vw] md:w-[40vw] lg:w-[250px] 2xl:w-[300px]">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-[auto]">
+                <img [src]="product.ImageUrls[0]" alt="card-image" class="object-cover w-full h-[200px]" />
+              </div>
+              <div class="p-6 h-[145px] md:h-[166px]">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    {{product.Title}}
+                  </p>
+                  <!-- <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                  <small>Starting From</small> ₹22,000
+                </p> -->
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  {{product.SmallDescription}}
+                </p>
+              </div>
+             <a [routerLink]="['/product-detail', product.SKU]"> <button class="card__btn mx-auto" >View Details</button> </a>
+            </div>
+    
+              <div *ngFor="let product of Sofas.slice(4, 8)"
+                class="card visible lg:hidden flex-shrink-0 snap-center relative pb-4 flex flex-col text-gray-700 bg-white shadow-sm bg-clip-border rounded-xl w-[80vw] md:w-[40vw] lg:w-[250px] 2xl:w-[300px]">
+                <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-[auto]">
+                  <img [src]="product.ImageUrls[0]" alt="card-image" class="object-cover w-full h-[200px]" />
+                </div>
+                <div class="p-6 h-[145px] md:h-[166px]">
+                  <div class="flex items-center justify-between mb-2">
+                    <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                      {{product.Title}}
+                    </p>
+                  </div>
+                  <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                    {{product.SmallDescription}}
+                  </p>
+                </div>
+                <a [routerLink]="['/product-detail', product.SKU]"> <button class="card__btn mx-auto">View Details</button> </a>
+              </div>
+          </div>
+      </div>
+
+
+
     <!-- Category1 Jhulas Row 1   -->
     <div class="flex-col">
       <h1 class="font-sans pl-[8vw] pt-4 text-left from-neutral-950 text-3xl">Jhulas</h1>
