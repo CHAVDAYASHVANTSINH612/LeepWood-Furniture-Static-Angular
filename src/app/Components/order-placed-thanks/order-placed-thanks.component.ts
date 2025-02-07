@@ -9,6 +9,8 @@ export class OrderPlacedThanksComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
 }

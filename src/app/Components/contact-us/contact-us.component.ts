@@ -13,7 +13,8 @@ import { Router } from '@angular/router';
 export class ContactUsComponent implements OnInit {
   faLocationDot = faLocationDot;
   faPhone = faPhone;
-  statusMessage:string=''
+  statusMessage:string='';
+  isLoading:boolean = false;
 
   constructor(private productService:ProductServiceService,private router:Router) {
    }
@@ -29,6 +30,7 @@ export class ContactUsComponent implements OnInit {
 
 
   submitContactUsForm(){
+    this.isLoading = true;
     this.statusMessage=''
     let name= this.contactUsForm.get('name');
     let phoneNumber= this.contactUsForm.get('phoneNumber');
@@ -38,10 +40,12 @@ export class ContactUsComponent implements OnInit {
 
     if(!name?.valid){
       this.statusMessage="Name Required"
+      this.isLoading = false;
       return;
     }
     else if(!phoneNumber?.valid){
       this.statusMessage="PhoneNumber must be 10 digit"
+      this.isLoading = false;
       return;
     }
 
@@ -54,10 +58,12 @@ export class ContactUsComponent implements OnInit {
       (response) => {
         console.log('Form submitted successfully', response);
         this.contactUsForm.reset();
+        this.isLoading = false;
         alert("Form submitted successfully")
       },
       (error) => {
         console.error('Error submitting form', error);
+        this.isLoading = false;
       }
     );
 

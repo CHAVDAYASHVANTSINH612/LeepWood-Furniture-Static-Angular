@@ -22,7 +22,7 @@
 
       <div class="flex gap-4 mt-10 items-center justify-center">
         <button type="submit" (click)="submitContactUsForm()"
-          class="w-[40%] px-4 py-3 bg-[#170E54] hover:bg-[#2D1BA7] text-white text-sm font-semibold rounded">Submit</button>
+          class="w-[40%] px-4 py-3 bg-[#170E54] hover:bg-[#2D1BA7] text-white text-sm font-semibold rounded flex items-center justify-center"><span class="mr-6">Submit </span> <div *ngIf="isLoading" class="loader"></div></button>
       </div>
     </form>
 

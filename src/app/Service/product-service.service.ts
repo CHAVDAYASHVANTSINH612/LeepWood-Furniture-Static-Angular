@@ -46,7 +46,7 @@ export class ProductServiceService {
       SmallDescription: "Add a stylish touch with this sturdy, comfortable swing, perfect for indoor and outdoor relaxation.",
       LongDescription: "In Development .. stay tuned",
       Price: 34000,
-      ImageUrls: ["assets/jhula1.jpeg","assets/jhula2.jpeg"],
+      ImageUrls: ["assets/jhula1.png"],
       Category: "Jhulas",
       InStock: true,
       Rating: 4.5,
