@@ -11,8 +11,17 @@ export class ProductServiceService {
   formspreeUrl = "https://formspree.io/f/xovjwkww";
 
   ContactUsformspreeUrl = "https://formspree.io/f/movqqgak";
+
+  PageVisitUAformspreeUrl = "https://formspree.io/f/xdkadwwo";
   
   constructor(private http:HttpClient) { }
+
+  submitPageVisitUAForm(formData: any): Observable<any> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+    return this.http.post(this.PageVisitUAformspreeUrl, formData, { headers });
+  }
 
   submitForm(formData: any): Observable<any> {
     const headers = new HttpHeaders({
